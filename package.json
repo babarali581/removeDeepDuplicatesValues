@@ -1,0 +1,26 @@
+{
+  "name": "remove-deep-duplicate-from-array",
+  "version": "1.0.0",
+  "description": "remove duplicate values from an array ",
+  "main": "getDeepDuplicate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babarali581/removeDeepDuplicatesValues.git"
+  },
+  "keywords": [
+    "javascript",
+    "array",
+    "unique",
+    "removeduplicate",
+    "unique-values"
+  ],
+  "author": "Babar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babarali581/removeDeepDuplicatesValues/issues"
+  },
+  "homepage": "https://github.com/babarali581/removeDeepDuplicatesValues#readme"
+}
