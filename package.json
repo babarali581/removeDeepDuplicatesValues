@@ -2,7 +2,7 @@
   "name": "remove-deep-duplicate-from-array",
   "version": "1.0.2",
   "description": "remove duplicate values from an array ",
-  "main": "getDeepDuplicate.js",
+  "main": "removeDeepDuplicate.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
