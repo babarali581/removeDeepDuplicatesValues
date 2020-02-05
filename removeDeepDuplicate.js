@@ -50,9 +50,6 @@ function removeDeepDuplicate(arr) {
 
     }
 }
-let x = ['a' ,'b' ,'c' ,'b' ,{d:'d' , e:'e' ,f:'f'} , {f:'f' , e:'e' ,d:'d'} , ['g' , 'h' ,'i'] , ['i' , 'h' ,'g']]
-let y = removeDeepDuplicate(x)
-console.log("yyy ",y);
 
 
 module.exports = removeDeepDuplicate
