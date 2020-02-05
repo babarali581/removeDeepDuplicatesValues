@@ -39,10 +39,9 @@ function removeDeepDuplicate(arr) {
 
             }, [])
             return  removeStringify(finalResp.sort())
-        } else if (typeof arr === "object") {
-            return getSortedObjectKeys(arr)
+      
         } else {
-            return new Error("You should provide array or object")
+            return new Error("You should provide array ")
         }
 
     } catch (err) {
