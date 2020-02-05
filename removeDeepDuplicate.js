@@ -17,7 +17,7 @@ function removeDeepDuplicate(arr) {
                 /* In case of string */
                 if (eachVal === "String" || eachVal === "Number") {
                    // return acc.concat(val)
-                  return !acc.includes(val)     ? acc.concat(val)     : acc
+                  return   acc.concat(val)   
                 } else if (eachVal === "Object") {
 
                     val = JSON.stringify(getSortedObjectKeys(val))
