@@ -41,7 +41,7 @@ function removeDeepDuplicate(arr) {
             return  removeStringify(finalResp.sort())
       
         } else {
-            return new Error("You should provide array ")
+            return new Error("Array is require in argymrnt")
         }
 
     } catch (err) {

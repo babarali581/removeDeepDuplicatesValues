@@ -1,15 +1,16 @@
-function getSortedObjectKeys(o) {
-       let a = [];
 
+function getSortedObjectKeys(o) {
+    let a = [];
+    
     for (let key in o) {
         if (o.hasOwnProperty(key)) {
             a.push(key);
         }
     }
-
+    
     a.sort();
-
     const sortObj = a.reduce((acc, key) => {
+        let {getSortNestedArray} = require("./getSortNestedArray")
         let getVal = o[key]
 
         let eachVal = typeof getVal === "string"
@@ -19,8 +20,8 @@ function getSortedObjectKeys(o) {
                 : Array.isArray(getVal)
                     ? "Array"
                     : "Object"
-
         if (eachVal === "String" || eachVal === "Number") {
+
             acc[key] = getVal
 
             return acc
@@ -31,7 +32,7 @@ function getSortedObjectKeys(o) {
             return acc
 
         } else if (eachVal === "Array") {
-            acc[key] = getVal.sort()
+            acc[key] = getSortNestedArray(getVal)
 
             return acc
 
@@ -41,4 +42,4 @@ function getSortedObjectKeys(o) {
 
     return sortObj;
 }
-module.exports = getSortedObjectKeys
+module.exports.getSortedObjectKeys = getSortedObjectKeys
