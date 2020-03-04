@@ -1,6 +1,6 @@
 {
   "name": "remove-deep-duplicate-from-array",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "remove duplicate values from an array ",
   "main": "removeDeepDuplicate.js",
   "scripts": {

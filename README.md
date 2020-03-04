@@ -1,4 +1,4 @@
-# about removeDeepDuplicatesValues
+#  removeDeepDuplicatesValues
 
 `You can pass array in argument if any two values are same wether different indexing it will appear single time`
 
@@ -10,7 +10,7 @@ const deepDuplicate = require("remove-deep-duplicate-from-array")
 
     let x = ['a' ,'b' , 'c' ,'a' , 'd' , 'b']
 
-    let y = deepDuplicate(bab)
+    let y = deepDuplicate(x)
 
     //output
     //y =  [ 'a', 'b', 'c', 'd' ]  
