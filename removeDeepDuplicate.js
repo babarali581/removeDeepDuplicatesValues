@@ -16,30 +16,39 @@ function removeDeepDuplicate(arr) {
 
                 /* In case of string */
                 if (eachVal === "String" || eachVal === "Number") {
-                   // return acc.concat(val)
-                  return   acc.concat(val)   
+                    // return acc.concat(val)
+                    return !acc.includes(val)
+                        ? [
+                            ...acc,
+                            val
+                        ]
+                        : acc
                 } else if (eachVal === "Object") {
 
                     val = JSON.stringify(getSortedObjectKeys(val))
-                    return !acc.includes(val) ?[
-                        ...acc,
-                        val
-                    ]: acc
+                    return !acc.includes(val)
+                        ? [
+                            ...acc,
+                            val
+                        ]
+                        : acc
 
                 } else if (eachVal === "Array") {
 
                     val = JSON.stringify(getSortNestedArray(val))
 
-                    return !acc.includes(val) ?[
-                        ...acc,
-                        val
-                    ]: acc
+                    return !acc.includes(val)
+                        ? [
+                            ...acc,
+                            val
+                        ]
+                        : acc
 
                 }
 
             }, [])
-            return  removeStringify(finalResp.sort())
-      
+            return removeStringify(finalResp.sort())
+
         } else {
             return new Error("Array is require in argymrnt")
         }
@@ -49,6 +58,5 @@ function removeDeepDuplicate(arr) {
 
     }
 }
-
 
 module.exports = removeDeepDuplicate
